@@ -1,4 +1,6 @@
 import React from "react";
+import Header from "./Header";
+import Footer from "./Footer";
 
 function Homepage() {
   const boja = {
@@ -6,6 +8,7 @@ function Homepage() {
   };
   return (
     <>
+      <Header />
       <div className="d-flex justify-content-center bd-highlight mb-2">
         <div className="p-2 bd-highlight">
           <h1 className="display-2" style={boja}>
@@ -22,6 +25,9 @@ function Homepage() {
           ></img>
         </div>
       </div>
+      <div>&nbsp;</div>
+      <div>&nbsp;</div>
+      <Footer />
     </>
   );
 }

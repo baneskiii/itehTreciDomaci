@@ -33,11 +33,11 @@ const Header = () => {
             <li className="nav-item">
               <a
                 className="nav-link"
-                href="#"
+                href="/origin"
                 tabIndex="-1"
                 aria-disabled="true"
               >
-                Contact
+                Origin
               </a>
             </li>
           </ul>
