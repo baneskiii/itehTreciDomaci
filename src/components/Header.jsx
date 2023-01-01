@@ -1,12 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <nav className="navbar navbar-expand-xl navbar-dark bg-dark">
       <div className="container-fluid">
-        <a className="navbar-brand" href="/">
+        <Link className="navbar-brand" to="/">
           Honey
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -21,24 +22,25 @@ const Header = () => {
         <div className="collapse navbar-collapse show" id="navbarDark">
           <ul className="navbar-nav me-auto mb-2 mb-xl-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="/">
+              <Link className="nav-link active" aria-current="page" to="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/types">
+              <Link className="nav-link active" aria-current="page" to="/types">
                 Types
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a
-                className="nav-link"
-                href="/origin"
+              <Link
+                className="nav-link active"
+                aria-current="page"
+                to="/origin"
                 tabIndex="-1"
                 aria-disabled="true"
               >
                 Origin
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
