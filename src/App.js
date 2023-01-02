@@ -1,7 +1,4 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
 import Homepage from "./components/Homepage";
 import HoneyTypes from "./components/HoneyTypes";
 import Origin from "./components/Origin";
@@ -156,9 +153,6 @@ function App() {
     },
   ];
   const [origin, setOrigin] = useState("");
-  function changePage(origin) {
-    setPage(origin);
-  }
   function changeOrigin(origin) {
     setOrigin(origin);
   }
@@ -178,7 +172,7 @@ function App() {
           }
         />
         <Route
-          path="/origin"
+          path="/region"
           element={
             <Origin
               honeyCanada={honeyCanada}

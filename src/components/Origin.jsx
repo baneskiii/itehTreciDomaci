@@ -11,9 +11,6 @@ const Origin = ({
   origin,
   changeOrigin,
 }) => {
-  function changeCoutry(country) {
-    changeOrigin(country);
-  }
   return (
     <>
       <Header />
@@ -31,7 +28,7 @@ const Origin = ({
               id="btnRadio1"
               autoComplete="off"
               checked=""
-              onChange={() => changeCoutry("Canada")}
+              onChange={() => changeOrigin("Canada")}
             ></input>
             <label className="btn btn-outline-primary" htmlFor="btnRadio1">
               Canada
@@ -43,7 +40,7 @@ const Origin = ({
               name="btnGroupRadio"
               id="btnRadio2"
               autoComplete="off"
-              onChange={() => changeCoutry("US")}
+              onChange={() => changeOrigin("US")}
             ></input>
             <label className="btn btn-outline-primary" htmlFor="btnRadio2">
               United States
@@ -55,7 +52,7 @@ const Origin = ({
               name="btnGroupRadio"
               id="btnRadio3"
               autoComplete="off"
-              onChange={() => changeCoutry("France")}
+              onChange={() => changeOrigin("France")}
             ></input>
             <label className="btn btn-outline-primary" htmlFor="btnRadio3">
               France
@@ -67,7 +64,7 @@ const Origin = ({
               name="btnGroupRadio"
               id="btnRadio4"
               autoComplete="off"
-              onChange={() => changeCoutry("Australia")}
+              onChange={() => changeOrigin("Australia")}
             ></input>
             <label className="btn btn-outline-primary" htmlFor="btnRadio4">
               Australia

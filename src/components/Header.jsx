@@ -22,11 +22,6 @@ const Header = () => {
         <div className="collapse navbar-collapse show" id="navbarDark">
           <ul className="navbar-nav me-auto mb-2 mb-xl-0">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/">
-                Home
-              </Link>
-            </li>
-            <li className="nav-item">
               <Link className="nav-link active" aria-current="page" to="/types">
                 Types
               </Link>
@@ -35,11 +30,11 @@ const Header = () => {
               <Link
                 className="nav-link active"
                 aria-current="page"
-                to="/origin"
+                to="/region"
                 tabIndex="-1"
                 aria-disabled="true"
               >
-                Origin
+                Region
               </Link>
             </li>
           </ul>
